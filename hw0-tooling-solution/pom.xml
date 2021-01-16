@@ -34,14 +34,15 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <exections>
-            <exection>
+          <version>$(exec.maven.version)</version>
+          <executions>
+            <execution>
               <phase>test</phase>
               <goals>
                 <goal>java</goal>
               </goals>
-            </exection>  
-          </exections>
+            </execution>  
+          </executions>
           <configuration>
             <mainClass>DijkstraMain</mainClass>
             <arguments>
