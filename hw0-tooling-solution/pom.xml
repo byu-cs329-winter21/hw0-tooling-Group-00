@@ -30,16 +30,10 @@
 
   <build>
 
-    <plugin>
-      <groupId>
-    </plugin>
-
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
+    <plugins>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>exec-maven-plugin</artifactId>
-          <version></version>
           <exections>
             <exection>
               <phase>test</phase>
@@ -51,12 +45,16 @@
           <configuration>
             <mainClass>DijkstraMain</mainClass>
             <arguments>
-              <argument></argument>
-              <argument></argument>
-              <argument></argument>
+              <argument>--disable-banner</argument>
+              <argument>--class-path=./target/test-classes</argument>
+              <argument>--scan-classpath</argument>
             </arguments>
           </configuration>  
         </plugin>
+    </plugins>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
