@@ -17,20 +17,46 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <exec.maven.version>1.1.1</exec.maven.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.11</version>
     </dependency>
   </dependencies>
 
   <build>
+
+    <plugin>
+      <groupId>
+    </plugin>
+
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version></version>
+          <exections>
+            <exection>
+              <phase>test</phase>
+              <goals>
+                <goal>java</goal>
+              </goals>
+            </exection>  
+          </exections>
+          <configuration>
+            <mainClass>DijkstraMain</mainClass>
+            <arguments>
+              <argument></argument>
+              <argument></argument>
+              <argument></argument>
+            </arguments>
+          </configuration>  
+        </plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
