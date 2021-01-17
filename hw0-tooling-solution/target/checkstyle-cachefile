@@ -1,0 +1,5 @@
+#Sat Jan 16 21:25:48 MST 2021
+configuration*?=A15F074BD83D200F28479928F1B00B04F4B437F2
+module-resource*?\:checkstyle-xpath-suppressions.xml=66998C6C2454311383B701833A1ECA13E51FB313
+module-resource*?\:checkstyle-suppressions.xml=A9D6C057BDEB2FA8855AA09F62BE014057F65902
+/home/hhe23/hw0-tooling-Group-00/hw0-tooling-solution/src/main/java/edu/byu/cs329/DijkstraMain.java=1610857485599
