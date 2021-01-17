@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.29">
-<file name="/home/hhe23/hw0-tooling-Group-00/hw0-tooling-solution/src/main/java/edu/byu/cs329/Dijkstra.java">
+<file name="/home/hhe23/hw0-tooling-Group-00/src/main/java/edu/byu/cs329/Dijkstra.java">
 <error line="13" severity="warning" message="Unused Javadoc tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/home/hhe23/hw0-tooling-Group-00/src/main/java/edu/byu/cs329/DijkstraMain.java">
 </file>
 </checkstyle>

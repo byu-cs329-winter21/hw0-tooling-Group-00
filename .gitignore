@@ -1,3 +1,9 @@
 # Default ignored files
-/shelf/
+/target/checkstyle-cachefile
+/target/checkstyle-result.xml
+/target/checkstyle-cachefile
+/target/checkstyle-cachefile
+/target/checkstyle-cachefile
+/target/checkstyle-cachefile
+
 /workspace.xml
