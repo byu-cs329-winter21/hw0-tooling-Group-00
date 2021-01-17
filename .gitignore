@@ -2,6 +2,7 @@
 /target/checkstyle-cachefile
 /target/checkstyle-result.xml
 /target/checkstyle-checker.xml
-
-
-/workspace.xml
+/target/generated-sources
+/target/maven-status
+/target/javadoc-bundle-options
+/target/maven-javadoc-plugin-stale-data.txt
