@@ -48,12 +48,11 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.1.1</version>
-
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>${exec.maven.version}</version>
         <executions>
           <execution>
             <phase>test</phase>
@@ -63,7 +62,7 @@
           </execution>
         </executions>
         <configuration>
-          <mainClass>DijkstraMain</mainClass>
+          <mainClass>edu.byu.cs329.DijkstraMain</mainClass>
           <arguments>
             <argument>--disable-banner</argument>
             <argument>--class-path=./target/test-classes</argument>

@@ -1,3 +1,5 @@
+package edu.byu.cs329;
+
 import java.util.HashSet;
 import java.util.Set;
 
