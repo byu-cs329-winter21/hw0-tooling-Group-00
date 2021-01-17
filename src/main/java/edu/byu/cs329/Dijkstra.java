@@ -8,6 +8,7 @@ public class Dijkstra {
   private int[][] graph;
   private int dimension;
   private int[][] li = null;
+  final Logger logger = LoggerFactory.getLogger(Dijkstra.class);
 
   /** constructor of Dijkstra class.
   * @return void

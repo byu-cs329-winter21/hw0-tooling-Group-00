@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class DijkstraMain {
-  final Logger logger = LoggerFactory.getLogger(Dijkstra.class);
 
   /** main method to run dijkstra.
   * @author Hongguang He - hhe23
