@@ -44,38 +44,32 @@
   <build>
 
     <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-checkstyle-plugin</artifactId>
-          <version>3.1.1</version>
-          <reportSets>
-            <reportSet>
-              <reports>
-                <report>checkstyle</report>
-              </reports>
-            </reportSet>
-          </reportSets>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>exec-maven-plugin</artifactId>
-          <executions>
-            <execution>
-              <phase>test</phase>
-              <goals>
-                <goal>java</goal>
-              </goals>
-            </execution>  
-          </executions>
-          <configuration>
-            <mainClass>DijkstraMain</mainClass>
-            <arguments>
-              <argument>--disable-banner</argument>
-              <argument>--class-path=./target/test-classes</argument>
-              <argument>--scan-classpath</argument>
-            </arguments>
-          </configuration>  
-        </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <version>3.1.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <phase>test</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>DijkstraMain</mainClass>
+          <arguments>
+            <argument>--disable-banner</argument>
+            <argument>--class-path=./target/test-classes</argument>
+            <argument>--scan-classpath</argument>
+          </arguments>
+        </configuration>
+      </plugin>
     </plugins>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
